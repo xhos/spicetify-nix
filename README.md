@@ -1,3 +1,7 @@
+```yaml
+the point of the fork is to try to get beautiful lyrics to work
+```
+
 # Spicetify-Nix
 
 Modifies Spotify using [spicetify-cli](https://github.com/khanhas/spicetify-cli).
@@ -47,7 +51,7 @@ argument inside of `extraSpecialArgs` for that: `inputs`.
 ```nix
 {
     # the ... lets us accept any inputs, and "@ inputs" lets us capture those.
-    outputs = { nixpkgs, ...} @ inputs: let     
+    outputs = { nixpkgs, ...} @ inputs: let
         # here we use nixpkgs from our inputs, which is why why included it
         # above instead of just {...} @ inputs. If we did that, this would be
         # "inputs.nixpkgs".

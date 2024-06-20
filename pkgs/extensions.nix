@@ -39,10 +39,6 @@ with source; let
     src = historySrc;
     filename = "historyShortcut.js";
   };
-  genre = {
-    src = genreSrc;
-    filename = "genre.js";
-  };
   lastfm = {
     src = "${lastfmSrc}/src";
     filename = "lastfm.js";
@@ -150,6 +146,11 @@ with source; let
     filename = "adblock.js";
   };
 
+  beautifulLyrics = {
+    src = "${beautifulLyricsSrc}/Source";
+    filename = "main.ts";
+  };
+
   # UNUSED
   # startpage needs r/w
   # startPage = {
@@ -238,7 +239,7 @@ in
   // appendJS autoVolume
   // appendJS history
   // appendJS lastfm
-  // appendJS genre
+  // appendJS beautifulLyrics
   // appendJS hidePodcasts
   // appendJS charliesAdblock # adblock.js
   // appendJS savePlaylists
