@@ -158,7 +158,7 @@ with source; let
   #   filename = "startup-page.js";
   # };
 
-  sanitizeName = lib.replaceStrings [".js" "+"] ["" ""];
+  sanitizeName = lib.replaceStrings [".js" ".ts" "+"] ["" "" ""];
 
   warnExt = {
     ext,
